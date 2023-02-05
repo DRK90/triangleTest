@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 	if(side1==side2 && side2==side3)
 	{
-		cout << "Equilateral\n";
+		cout << "Equilateral triangle\n";
 	} else if (side1==side2 or side1==side3 or side2==side3)
 	{
 		cout << "Isosceles\n";
