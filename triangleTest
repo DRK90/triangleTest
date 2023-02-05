@@ -1,0 +1,21 @@
+#!/bin/bash
+clear
+
+echo "This test will run the following test cases: 
+Case 1: sides: 1, 2, 3 expected Scalene
+Case 2: sides: 1, 1, 3 expected Isosceles
+Case 3: sides: 1, 1, 1 expected Equilateral
+Case 4: sides: 0, 1, 2 expected Try again error
+"
+
+g++ triangle.cpp -o triangle
+echo -e "\nrunning first test"
+./triangle 1 2 3
+echo -e "\nrunning second test"
+./triangle 1 1 3
+echo -e "\nrunning third test"
+./triangle 1 1 1
+echo -e "\nrunning fourth test"
+./triangle 0 1 1
+echo " "
+exit 0
